@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _printf - Custom printf function
  * @format: A string containing all the desired characters
@@ -18,7 +19,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			_putchar(*format);
+			putchar(*format);
 			printed_chars++;
 		}
 		else
